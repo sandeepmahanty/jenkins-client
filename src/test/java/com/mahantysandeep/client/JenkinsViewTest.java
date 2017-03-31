@@ -41,4 +41,17 @@ public class JenkinsViewTest extends TestBase {
             Assert.fail();
         }
     }
+
+    /*@Test
+    public void checkCorrectPrimaryViewHttps() {
+        try {
+            JenkinsConfiguration options = new JenkinsConfiguration();
+            options.setProtocol(HTTPClient.Protocol.HTTPS);
+            jenkinsClient.setOptions(options);
+            View actualView = jenkinsClient.getView(VIEW);
+            Assert.assertEquals(actualView, expectedView, "Expected " + expectedView + " but got " + actualView);
+        } catch (Exception ex) {
+            Assert.fail();
+        }
+    }*/
 }

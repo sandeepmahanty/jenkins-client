@@ -3,62 +3,62 @@
   "jobs" : [
     {
       "_class" : "hudson.maven.MavenModuleSet",
-      "name" : "akamai_university_reg",
-      "url" : "http://dev-cpcode-docker01.kendall.corp.akamai.com:8080/job/akamai_university_reg/",
+      "name" : "job#1",
+      "url" : "http://localhost:8080/job/job#1/",
       "color" : "yellow"
     },
     {
       "_class" : "hudson.maven.MavenModuleSet",
-      "name" : "case_management_reg",
-      "url" : "http://dev-cpcode-docker01.kendall.corp.akamai.com:8080/job/case_management_reg/",
+      "name" : "job#2",
+      "url" : "http://localhost:8080/job/job#2/",
       "color" : "yellow"
     },
     {
       "_class" : "hudson.maven.MavenModuleSet",
-      "name" : "contracts_api_reg",
-      "url" : "http://dev-cpcode-docker01.kendall.corp.akamai.com:8080/job/contracts_api_reg/",
+      "name" : "job#3",
+      "url" : "http://localhost:8080/job/job#3/",
       "color" : "yellow"
     },
     {
       "_class" : "hudson.maven.MavenModuleSet",
-      "name" : "cpcontract_reg",
-      "url" : "http://dev-cpcode-docker01.kendall.corp.akamai.com:8080/job/cpcontract_reg/",
+      "name" : "job#4",
+      "url" : "http://localhost:8080/job/job#4/",
       "color" : "yellow"
     },
     {
       "_class" : "hudson.maven.MavenModuleSet",
-      "name" : "customer_marketplace_reg",
-      "url" : "http://dev-cpcode-docker01.kendall.corp.akamai.com:8080/job/customer_marketplace_reg/",
+      "name" : "job#5",
+      "url" : "http://localhost:8080/job/job#5/",
       "color" : "red"
     },
     {
       "_class" : "hudson.maven.MavenModuleSet",
-      "name" : "customer_marketplace_reg_perm",
-      "url" : "http://dev-cpcode-docker01.kendall.corp.akamai.com:8080/job/customer_marketplace_reg_perm/",
+      "name" : "job#6",
+      "url" : "http://localhost:8080/job/job#6/",
       "color" : "yellow"
     },
     {
       "_class" : "hudson.maven.MavenModuleSet",
-      "name" : "luna_workflow_manager_reg",
-      "url" : "http://dev-cpcode-docker01.kendall.corp.akamai.com:8080/job/luna_workflow_manager_reg/",
+      "name" : "job#7",
+      "url" : "http://localhost:8080/job/job#7/",
       "color" : "yellow"
     },
     {
       "_class" : "hudson.maven.MavenModuleSet",
-      "name" : "prospect_marketplace_reg",
-      "url" : "http://dev-cpcode-docker01.kendall.corp.akamai.com:8080/job/prospect_marketplace_reg/",
+      "name" : "job#8",
+      "url" : "http://localhost:8080/job/job#8/",
       "color" : "red"
     },
     {
       "_class" : "hudson.maven.MavenModuleSet",
-      "name" : "pulsar_workflow_manager_reg",
-      "url" : "http://dev-cpcode-docker01.kendall.corp.akamai.com:8080/job/pulsar_workflow_manager_reg/",
+      "name" : "job#9",
+      "url" : "http://localhost:8080/job/job#9/",
       "color" : "yellow"
     },
     {
       "_class" : "hudson.maven.MavenModuleSet",
-      "name" : "trials_api_reg",
-      "url" : "http://dev-cpcode-docker01.kendall.corp.akamai.com:8080/job/trials_api_reg/",
+      "name" : "job#10",
+      "url" : "http://localhost:8080/job/job#10/",
       "color" : "yellow"
     }
   ],
@@ -66,5 +66,5 @@
   "property" : [
 
   ],
-  "url" : "http://dev-cpcode-docker01.kendall.corp.akamai.com:8080/view/Test/"
+  "url" : "http://localhost:8080/view/Test/"
 }
