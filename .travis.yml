@@ -1,5 +1,5 @@
 language: java
-script: mvn install
+script: sudo mvn install
 sudo: true
 after_success:
   - mvn clean test jacoco:report coveralls:report
