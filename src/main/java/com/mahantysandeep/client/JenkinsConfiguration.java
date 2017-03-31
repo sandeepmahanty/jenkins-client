@@ -4,13 +4,13 @@ package com.mahantysandeep.client;
  * Created by smahanty on 3/31/17.
  */
 public class JenkinsConfiguration {
-    private HTTPClient.Protocol protocol;
+    private Protocol protocol;
 
-    public HTTPClient.Protocol getProtocol() {
+    public Protocol getProtocol() {
         return protocol;
     }
 
-    public void setProtocol(HTTPClient.Protocol protocol) {
+    public void setProtocol(Protocol protocol) {
         this.protocol = protocol;
     }
 }

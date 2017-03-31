@@ -2,6 +2,7 @@ package com.mahantysandeep.client;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import com.mahantysandeep.helper.UrlBuilder;
 import com.mahantysandeep.model.Home;
 import com.mahantysandeep.model.View;
 import org.slf4j.Logger;
@@ -58,12 +59,16 @@ public class JenkinsClient {
 
     public View getView(String viewName) {
         View view = null;
+        String url = "";
         try {
-            String response = httpClient.get(address.getHost() + ":" + address.getPort() + VIEW_PREFIX + viewName + API_SUFFIX, getActiveProtocol());
+            url = new UrlBuilder(address, options).create();
+            String response = httpClient.get(url + VIEW_PREFIX + viewName + API_SUFFIX, getActiveProtocol());
             LOGGER.info("Got json : " + response);
             view = GSON.fromJson(response, View.class);
         } catch (IOException ex) {
-            LOGGER.error("failed to get home page at " + address.toString() + " due to " + ex.getMessage());
+            LOGGER.error("failed to get home page at " + url + " due to " + ex.getMessage());
+        } catch (Exception ex) {
+            LOGGER.error("failed to get home page at " + url + " due to " + ex.getMessage());
         }
 
         return view;
@@ -76,11 +81,15 @@ public class JenkinsClient {
      */
     public Home getJenkinsHome() {
         Home home = null;
+        String url = "";
         try {
-            String response = httpClient.get(address.getHost() + ":" + address.getPort() + API_SUFFIX, getActiveProtocol());
+            url = new UrlBuilder(address, options).create();
+            String response = httpClient.get(url + API_SUFFIX, getActiveProtocol());
             LOGGER.info("Got json : " + response);
             home = GSON.fromJson(response, Home.class);
         } catch (IOException ex) {
+            LOGGER.error("failed to get home page at " + address.toString() + " due to " + ex.getMessage());
+        } catch (Exception ex) {
             LOGGER.error("failed to get home page at " + address.toString() + " due to " + ex.getMessage());
         }
         return home;
@@ -109,9 +118,9 @@ public class JenkinsClient {
         this(new ServerAddress(host, port));
     }
 
-    private HTTPClient.Protocol getActiveProtocol() {
+    private Protocol getActiveProtocol() {
         if (options == null) {
-            return HTTPClient.Protocol.HTTP;
+            return Protocol.HTTP;
         }
         return options.getProtocol();
     }
