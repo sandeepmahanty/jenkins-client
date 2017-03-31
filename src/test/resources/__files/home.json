@@ -1,0 +1,134 @@
+{
+  "assignedLabels": [
+    {
+    }
+  ],
+  "mode": "NORMAL",
+  "nodeDescription": "the master Jenkins node",
+  "nodeName": "",
+  "numExecutors": 2,
+  "description": null,
+  "jobs": [
+    {
+      "_class": "hudson.maven.MavenModuleSet",
+      "name": "akamai_university_reg",
+      "url": "http://dev-cpcode-docker01.kendall.corp.akamai.com:8080/job/akamai_university_reg/",
+      "color": "yellow"
+    },
+    {
+      "_class": "hudson.model.FreeStyleProject",
+      "name": "build",
+      "url": "http://dev-cpcode-docker01.kendall.corp.akamai.com:8080/job/build/",
+      "color": "red"
+    },
+    {
+      "_class": "hudson.maven.MavenModuleSet",
+      "name": "build_deploy_jenkins_dashboard",
+      "url": "http://dev-cpcode-docker01.kendall.corp.akamai.com:8080/job/build_deploy_jenkins_dashboard/",
+      "color": "blue"
+    },
+    {
+      "_class": "hudson.maven.MavenModuleSet",
+      "name": "case_management_reg",
+      "url": "http://dev-cpcode-docker01.kendall.corp.akamai.com:8080/job/case_management_reg/",
+      "color": "yellow"
+    },
+    {
+      "_class": "hudson.maven.MavenModuleSet",
+      "name": "contracts_api_reg",
+      "url": "http://dev-cpcode-docker01.kendall.corp.akamai.com:8080/job/contracts_api_reg/",
+      "color": "yellow"
+    },
+    {
+      "_class": "hudson.maven.MavenModuleSet",
+      "name": "cpcontract_reg",
+      "url": "http://dev-cpcode-docker01.kendall.corp.akamai.com:8080/job/cpcontract_reg/",
+      "color": "yellow"
+    },
+    {
+      "_class": "hudson.maven.MavenModuleSet",
+      "name": "customer_marketplace_deploy",
+      "url": "http://dev-cpcode-docker01.kendall.corp.akamai.com:8080/job/customer_marketplace_deploy/",
+      "color": "red"
+    },
+    {
+      "_class": "hudson.maven.MavenModuleSet",
+      "name": "customer_marketplace_reg",
+      "url": "http://dev-cpcode-docker01.kendall.corp.akamai.com:8080/job/customer_marketplace_reg/",
+      "color": "red"
+    },
+    {
+      "_class": "hudson.maven.MavenModuleSet",
+      "name": "customer_marketplace_reg_perm",
+      "url": "http://dev-cpcode-docker01.kendall.corp.akamai.com:8080/job/customer_marketplace_reg_perm/",
+      "color": "yellow"
+    },
+    {
+      "_class": "hudson.maven.MavenModuleSet",
+      "name": "luna_blr_common",
+      "url": "http://dev-cpcode-docker01.kendall.corp.akamai.com:8080/job/luna_blr_common/",
+      "color": "blue"
+    },
+    {
+      "_class": "hudson.maven.MavenModuleSet",
+      "name": "luna_workflow_manager_reg",
+      "url": "http://dev-cpcode-docker01.kendall.corp.akamai.com:8080/job/luna_workflow_manager_reg/",
+      "color": "yellow"
+    },
+    {
+      "_class": "hudson.model.FreeStyleProject",
+      "name": "mp3_automation",
+      "url": "http://dev-cpcode-docker01.kendall.corp.akamai.com:8080/job/mp3_automation/",
+      "color": "blue"
+    },
+    {
+      "_class": "hudson.maven.MavenModuleSet",
+      "name": "prospect_marketplace_reg",
+      "url": "http://dev-cpcode-docker01.kendall.corp.akamai.com:8080/job/prospect_marketplace_reg/",
+      "color": "red"
+    },
+    {
+      "_class": "hudson.maven.MavenModuleSet",
+      "name": "pulsar_workflow_manager_reg",
+      "url": "http://dev-cpcode-docker01.kendall.corp.akamai.com:8080/job/pulsar_workflow_manager_reg/",
+      "color": "yellow"
+    },
+    {
+      "_class": "hudson.maven.MavenModuleSet",
+      "name": "trials_api_reg",
+      "url": "http://dev-cpcode-docker01.kendall.corp.akamai.com:8080/job/trials_api_reg/",
+      "color": "yellow"
+    }
+  ],
+  "overallLoad": {
+  },
+  "primaryView": {
+    "_class": "hudson.model.AllView",
+    "name": "All",
+    "url": "http://dev-cpcode-docker01.kendall.corp.akamai.com:8080/"
+  },
+  "quietingDown": false,
+  "slaveAgentPort": -1,
+  "unlabeledLoad": {
+    "_class": "jenkins.model.UnlabeledLoadStatistics"
+  },
+  "useCrumbs": true,
+  "useSecurity": true,
+  "views": [
+    {
+      "_class": "hudson.model.AllView",
+      "name": "All",
+      "url": "http://dev-cpcode-docker01.kendall.corp.akamai.com:8080/"
+    },
+    {
+      "_class": "hudson.model.MyView",
+      "name": "My View",
+      "url": "http://dev-cpcode-docker01.kendall.corp.akamai.com:8080/view/My%20View/"
+    },
+    {
+      "_class": "hudson.model.ListView",
+      "name": "Test",
+      "url": "http://dev-cpcode-docker01.kendall.corp.akamai.com:8080/view/Test/"
+    }
+  ]
+}
