@@ -14,13 +14,12 @@ import static com.github.tomakehurst.wiremock.core.WireMockConfiguration.options
  */
 public class TestBase {
     protected static final int WIREMOCK_PORT = 9090;
-    protected static final int WIREMOCK_SSL_PORT = 443;
     protected static WireMockServer wireMockServer;
     protected static Gson gson;
 
     @BeforeSuite
     public void setUp() {
-        wireMockServer = new WireMockServer(options().port(WIREMOCK_PORT).httpsPort(WIREMOCK_SSL_PORT));
+        wireMockServer = new WireMockServer(options().port(WIREMOCK_PORT));
         wireMockServer.start();
         gson = new GsonBuilder().setPrettyPrinting().create();
     }
