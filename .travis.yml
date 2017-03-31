@@ -1,6 +1,6 @@
 language: java
 script: mvn install
-sudo: required
+sudo: false
 after_success:
   - mvn clean test jacoco:report coveralls:report
 jdk:
